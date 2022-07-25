@@ -1,0 +1,36 @@
+context:
+  expressions:
+    orderInquiry:
+      - "@when (until, is, will) my [order, package, goods, item] (is delivered,
+        being delivered, arrives, gets here, gets delivered, arriving)"
+    orderNumber:
+      - (my order, order) number (is) $pv.TwoDigitInteger:number
+    cancelOrder:
+      - (@want) cancel (my, this) order
+    orderItem:
+      - "@have (a, an) $type:item1"
+      - "@have (a, an) $type:item1 (and) $type:item2"
+      - "@have (a, an) $type:item1 (and) $type:item2 (and) $type:item3"
+      - "@have (a, an) $type:item1 (and) $type:item2 (and) $type:item3 (and)
+        $type:item4"
+  slots:
+    type:
+      - drill
+      - hammer
+      - ruler
+      - screwdriver
+  macros:
+    when:
+      - how many days
+      - how long
+      - when will
+      - what day
+    want:
+      - I want to
+      - I wish to
+    have:
+      - i bought
+      - i got
+      - there are
+      - there is
+      - i ordered
