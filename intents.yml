@@ -11,8 +11,7 @@ context:
       - "@have (a, an) $type:item1"
       - "@have (a, an) $type:item1 (and) $type:item2"
       - "@have (a, an) $type:item1 (and) $type:item2 (and) $type:item3"
-      - "@have (a, an) $type:item1 (and) $type:item2 (and) $type:item3 (and)
-        $type:item4"
+      - "@have (a, an) $type:item1 (and) $type:item2 (and) $type:item3 (and) $type:item4"
   slots:
     type:
       - drill
