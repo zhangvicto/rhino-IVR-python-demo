@@ -1,0 +1,102 @@
+context:
+  expressions:
+    exchangeRate: 
+      - "@can [explain, tell me] your @exchangeRate (to me)"
+      - "[@do, is there] [your, the, a] list of @exchangeRate"
+      - "@how [your, the, a] @exchangeRate @calculate"
+      - "@how [@do, you] (@calculate) [your, the, a] @exchangeRate"
+      - "@how much [do, will] I get with the @exchangeRate"
+      - "@what [your, the, a, my] [most current, current, international] @exchangeRate (today, like, for me, today like)"
+      - "@what @exchangeRate @do (use, offer)"
+    cancelAccountTransfer: 
+      - "@can [a, my] (last) [transaction, transfer] be cancelled"
+      - "@can cancel [a, my] (last) [transaction, transfer]"
+      - "help me cancel [a, my] (last) [transaction, transfer]"
+      - "@how [@can, @do] I cancel [a, my] (last) [transaction, transfer]"
+      - "I made a [transaction, transfer] to the wrong account"
+      - "I made a mistake [in, with] [a, my] [transaction, transfer]"
+    cardArrival: 
+      - "@when [my] (new) (debit, credit) card (will) arrive"
+      - "[where is, i have not received, i did not receive, how do i locate, how do i track, still waiting for] my (new) (debit, credit) card"
+      - "why has my (new) (debit, credit) card not arrived"
+      - "is there tracking information (available) for my (debit, credit) card"
+      - "is my (debit, credit) card lost (on the way, during transport, during shipping)"
+      - "my (debit, credit) card (still) (has not, hasn't) arrived"
+    accountNumber: 
+      - "(my, the) (account number is) $pv.TwoDigitInteger:number (is) (my, the) (account number)"
+    cardType: 
+      - "my card is a $type:type (card)"
+      - "I ordered a $type:type (card)"
+      - "$type:type (card)"
+    transferCall: 
+      - "(please) transfer (my, this) call (now) to [a, an] @agent (please)"
+      - "i need (some) help from [a, an] @agent (please)"
+  
+  slots: 
+    type: 
+      - credit
+      - debit
+
+  macros: 
+    can: 
+      - can
+      - can you
+      - can i
+    do: 
+      - do
+      - do you
+      - do you have
+    how: 
+      - How are
+      - How do
+    what: 
+      - What
+      - What are
+      - What do
+      - What is
+    where:
+      - Where did
+      - Where do
+    exchangeRate:
+      - exchange rate
+      - exchange rates
+      - exchange rate policy 
+    calculate: 
+      - determine
+      - determining
+      - calculate
+      - calculating
+      - compute
+      - computing
+      - come up with
+      - coming up with
+      - calculated
+      - computed
+      - determined
+    need: 
+      - i need 
+      - i need to
+      - i want
+      - i want to
+      - i wish
+      - i wish to 
+      - i hope
+      - i hope to
+      - i would like
+      - i'd like
+    when: 
+      - when 
+      - when is
+      - when will
+    agent: 
+      - agent
+      - human
+      - live human
+      - live agent
+
+
+    
+      
+
+
+  

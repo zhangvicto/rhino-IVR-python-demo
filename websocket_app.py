@@ -30,13 +30,15 @@ async def handler(websocket):
                 #print("Media message: {}".format(message))
                 payload = data['media']['payload']
 
+                
+
                 # if firsst message then we create last audio data
                 # audio_data = data['media']['payload']
 
-                print("Payload is: {}".format(payload))
-                print("size is", 3*((len(data['media']['payload'])/4)))
+                # print("Payload is: {}".format(payload))
+                # print("size is", 3*((len(data['media']['payload'])/4)))
 
-                # Decode base
+                # Decode base64
                 chunk = base64.b64decode(payload)
                 
                 # xulaw to wav
@@ -57,13 +59,24 @@ async def handler(websocket):
                 #     inference = handle.get_inference()
                 #     if not inference.is_understood:
                 #         # add code to handle unsupported commands
-                #         print('try again')
+                #         print("Hi! How may I help you?")
                 #         pass
                 #     else:
                 #         intent = inference.intent
+                # 
+                #         if intent == "orderInquiry": 
+                #           print("What is your order number?")
+                #         else if intent == "orderNumber": 
+                #           print("What items did you order?")
+                #         else if intent == "orderItem": 
+                #           if slots[item1] == "screwdriver": 
+                #                print("Your order will arrive in 5 days.")
+                #           if slots[item1] == "drill":  # change to if it includes
+                #                print("Your order will arrive in 6 days.")
+                #           print("Do you want to cancel this order?")  
+                #         else if intent == "cancelOrder"        
                 #         slots = inference.slots
                 #         print(intent)
-                # add code to take action based on inferred intent and slot values
 
 
         if data['event'] == "closed":
